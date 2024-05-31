@@ -1,13 +1,14 @@
 package Graphs;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Graph {
-    final List<Vertex> vertices;
+    final LinkedList<Vertex> vertices;
     int totalWeight = 0;
     public Graph (){
-        this.vertices = new ArrayList<Vertex>();
+        this.vertices = new LinkedList<>();
     }
     public void addVertex (String value){
         vertices.add(new Vertex(value));

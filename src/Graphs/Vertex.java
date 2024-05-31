@@ -1,20 +1,19 @@
 package Graphs;
 
-import java.util.List;
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Vertex {
     private String values;
-    private List<Edge> edges;
+    private LinkedList<Edge> edges;
 
     public Vertex(String values) {
         this.values = values;
-        this.edges = new ArrayList<>();
+        this.edges = new LinkedList<>();
     }
     public String getValues() {
         return values;
     }
-    public List<Edge> getEdges() {
+    public LinkedList<Edge> getEdges() {
         return edges;
     }
     public void addEdge(Edge edge) {
