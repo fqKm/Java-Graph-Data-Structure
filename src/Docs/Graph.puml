@@ -1,0 +1,28 @@
+@startuml
+
+' Define the graph
+class Graph {
+    List<Vertex> vertices
+    int totalWeight
+}
+
+' Define the vertices
+class Vertex {
+    String name
+    List<Edge> edges
+}
+
+' Define the edges
+class Edge {
+    Vertex source
+    Vertex destination
+    int weight
+}
+
+' Relationships
+Graph --> Vertex : contains
+Vertex --> Edge : has
+Edge --> Vertex : destination
+Edge --> Vertex : source
+
+@enduml
